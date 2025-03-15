@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/socialMediaFlood-Scrapy.iml" filepath="$PROJECT_DIR$/.idea/socialMediaFlood-Scrapy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/socialMediaFlood-predict.iml" filepath="$PROJECT_DIR$/.idea/socialMediaFlood-predict.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,86 @@
+2021-02-15 19:28:54,769 - INFO - 
+Config:
+'add_train': False
+'batch_size': 64
+'continue_flag': ''
+'cur_time': '2021_02_15_19_28_54'
+'debug_mode': False
+'debug_num': 500
+'do_continue_train': False
+'do_figure_save': False
+'do_log_print_to_screen': True
+'do_log_save_to_file': True
+'do_predict': True
+'do_train': True
+'do_train_visualized': False
+'dropout_rate': 0.2
+'epoch': 20
+'feature_columns': [2, 3, 4, 5, 6, 7, 8]
+'figure_save_path': './figure/'
+'hidden_size': 128
+'input_size': 7
+'label_columns': [4, 5]
+'label_in_feature_index': [2, 3]
+'learning_rate': 0.001
+'log_save_path': './log/2021_02_15_19_28_54_pytorch/'
+'lstm_layers': 2
+'model_name': 'model_pytorch.pth'
+'model_postfix': {'pytorch': '.pth'
+'keras': '.h5'
+'tensorflow': '.ckpt'}
+'model_save_path': './checkpoint/pytorch/'
+'output_size': 2
+'patience': 5
+'predict_day': 1
+'random_seed': 42
+'shuffle_train_data': True
+'time_step': 20
+'train_data_path': './data/stock_data.csv'
+'train_data_rate': 0.95
+'use_cuda': False
+'used_frame': 'pytorch'
+'valid_data_rate': 0.15
+2021-02-15 19:28:54,839 - INFO - Epoch 0/20
+2021-02-15 19:29:01,353 - INFO - The train loss is 0.156223. The valid loss is 0.032087.
+2021-02-15 19:29:01,362 - INFO - Epoch 1/20
+2021-02-15 19:29:07,868 - INFO - The train loss is 0.021259. The valid loss is 0.012096.
+2021-02-15 19:29:07,873 - INFO - Epoch 2/20
+2021-02-15 19:29:14,426 - INFO - The train loss is 0.009395. The valid loss is 0.004908.
+2021-02-15 19:29:14,431 - INFO - Epoch 3/20
+2021-02-15 19:29:20,963 - INFO - The train loss is 0.005098. The valid loss is 0.002268.
+2021-02-15 19:29:20,969 - INFO - Epoch 4/20
+2021-02-15 19:29:27,519 - INFO - The train loss is 0.003387. The valid loss is 0.001299.
+2021-02-15 19:29:27,524 - INFO - Epoch 5/20
+2021-02-15 19:29:34,015 - INFO - The train loss is 0.002631. The valid loss is 0.001059.
+2021-02-15 19:29:34,020 - INFO - Epoch 6/20
+2021-02-15 19:29:40,456 - INFO - The train loss is 0.002381. The valid loss is 0.000944.
+2021-02-15 19:29:40,461 - INFO - Epoch 7/20
+2021-02-15 19:29:46,914 - INFO - The train loss is 0.002152. The valid loss is 0.000890.
+2021-02-15 19:29:46,920 - INFO - Epoch 8/20
+2021-02-15 19:29:53,378 - INFO - The train loss is 0.001952. The valid loss is 0.000795.
+2021-02-15 19:29:53,383 - INFO - Epoch 9/20
+2021-02-15 19:29:59,840 - INFO - The train loss is 0.001818. The valid loss is 0.000989.
+2021-02-15 19:29:59,840 - INFO - Epoch 10/20
+2021-02-15 19:30:06,271 - INFO - The train loss is 0.001762. The valid loss is 0.000844.
+2021-02-15 19:30:06,271 - INFO - Epoch 11/20
+2021-02-15 19:30:12,688 - INFO - The train loss is 0.001641. The valid loss is 0.000871.
+2021-02-15 19:30:12,689 - INFO - Epoch 12/20
+2021-02-15 19:30:19,078 - INFO - The train loss is 0.001667. The valid loss is 0.000719.
+2021-02-15 19:30:19,083 - INFO - Epoch 13/20
+2021-02-15 19:30:25,484 - INFO - The train loss is 0.001671. The valid loss is 0.000841.
+2021-02-15 19:30:25,485 - INFO - Epoch 14/20
+2021-02-15 19:30:31,894 - INFO - The train loss is 0.001469. The valid loss is 0.000716.
+2021-02-15 19:30:31,900 - INFO - Epoch 15/20
+2021-02-15 19:30:38,320 - INFO - The train loss is 0.001477. The valid loss is 0.000760.
+2021-02-15 19:30:38,320 - INFO - Epoch 16/20
+2021-02-15 19:30:44,719 - INFO - The train loss is 0.001495. The valid loss is 0.000768.
+2021-02-15 19:30:44,720 - INFO - Epoch 17/20
+2021-02-15 19:30:51,124 - INFO - The train loss is 0.001396. The valid loss is 0.000832.
+2021-02-15 19:30:51,125 - INFO - Epoch 18/20
+2021-02-15 19:30:57,538 - INFO - The train loss is 0.001407. The valid loss is 0.000738.
+2021-02-15 19:30:57,539 - INFO - Epoch 19/20
+2021-02-15 19:31:03,915 - INFO - The train loss is 0.001368. The valid loss is 0.000806.
+2021-02-15 19:31:03,915 - INFO -  The training stops early in epoch 19
+2021-02-15 19:31:04,001 - INFO - The mean squared error of stock ['low', 'high'] is [0.00878581 0.01332187]
+2021-02-15 19:31:04,589 - INFO - The predicted stock low for the next 1 day(s) is: 3402.9948255904565
+2021-02-15 19:31:04,991 - INFO - The predicted stock high for the next 1 day(s) is: 3488.548984867404

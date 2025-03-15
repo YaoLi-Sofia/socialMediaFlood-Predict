@@ -1,0 +1,71 @@
+2021-02-21 08:10:07,538 - INFO - 
+Config:
+'add_train': False
+'batch_size': 64
+'continue_flag': ''
+'cur_time': '2021_02_21_08_10_07'
+'debug_mode': True
+'debug_num': 500
+'do_continue_train': False
+'do_figure_save': False
+'do_log_print_to_screen': True
+'do_log_save_to_file': True
+'do_predict': True
+'do_train': True
+'do_train_visualized': False
+'dropout_rate': 0.2
+'epoch': 10
+'feature_columns': [2, 3, 4, 5, 6, 7, 8]
+'figure_save_path': './figure/'
+'hidden_size': 128
+'input_size': 7
+'label_columns': [4, 5]
+'label_in_feature_index': [2, 3]
+'learning_rate': 0.001
+'log_save_path': './log/2021_02_21_08_10_07_pytorch/'
+'lstm_layers': 2
+'model_name': 'model_pytorch.pth'
+'model_postfix': {'pytorch': '.pth'
+'keras': '.h5'
+'tensorflow': '.ckpt'}
+'model_save_path': './checkpoint/pytorch/'
+'output_size': 2
+'patience': 5
+'predict_day': 20
+'random_seed': 42
+'shuffle_train_data': True
+'time_step': 20
+'train_data_path': './data/stock_data.csv'
+'train_data_rate': 0.95
+'use_cuda': False
+'used_frame': 'pytorch'
+'valid_data_rate': 0.15
+2021-02-21 08:12:03,371 - INFO - Epoch 0/10
+2021-02-21 08:12:27,271 - INFO - The train loss is 0.893428. The valid loss is 0.693573.
+2021-02-21 08:12:27,278 - INFO - Epoch 1/10
+2021-02-21 08:12:27,819 - INFO - The train loss is 0.549201. The valid loss is 0.424875.
+2021-02-21 08:12:27,825 - INFO - Epoch 2/10
+2021-02-21 08:12:28,370 - INFO - The train loss is 0.378413. The valid loss is 0.332018.
+2021-02-21 08:12:28,376 - INFO - Epoch 3/10
+2021-02-21 08:12:28,912 - INFO - The train loss is 0.326526. The valid loss is 0.323824.
+2021-02-21 08:12:28,918 - INFO - Epoch 4/10
+2021-02-21 08:12:29,457 - INFO - The train loss is 0.305625. The valid loss is 0.295265.
+2021-02-21 08:12:29,462 - INFO - Epoch 5/10
+2021-02-21 08:12:30,005 - INFO - The train loss is 0.279667. The valid loss is 0.268616.
+2021-02-21 08:12:30,011 - INFO - Epoch 6/10
+2021-02-21 08:12:30,556 - INFO - The train loss is 0.249431. The valid loss is 0.226666.
+2021-02-21 08:12:30,562 - INFO - Epoch 7/10
+2021-02-21 08:12:31,101 - INFO - The train loss is 0.211866. The valid loss is 0.184140.
+2021-02-21 08:12:31,107 - INFO - Epoch 8/10
+2021-02-21 08:12:31,652 - INFO - The train loss is 0.181047. The valid loss is 0.176743.
+2021-02-21 08:12:31,658 - INFO - Epoch 9/10
+2021-02-21 08:12:32,199 - INFO - The train loss is 0.176524. The valid loss is 0.169522.
+2021-02-21 08:16:17,463 - INFO - The mean squared error of stock ['low', 'high'] is [nan nan]
+2021-02-21 08:16:18,072 - INFO - The predicted stock low for the next 20 day(s) is: [397.15638848 438.23515206 493.70040749 536.26406207 543.09691731
+ 532.40078141 531.12946839 522.18611679 511.5441563  519.73759096
+ 563.95122683 721.59477504 746.89857883 751.12910412 731.79495751
+ 674.54867711 621.96381669 611.23181792 589.5201669  564.3126535 ]
+2021-02-21 08:16:18,516 - INFO - The predicted stock high for the next 20 day(s) is: [428.53147603 467.16846369 522.54790733 566.5150032  574.97182733
+ 566.13749013 567.07122871 558.76174861 548.50808551 557.45637919
+ 603.53156708 764.95660944 789.33851806 793.45883526 774.20247563
+ 715.25977473 662.76833794 654.54117806 632.85268904 607.49888466]

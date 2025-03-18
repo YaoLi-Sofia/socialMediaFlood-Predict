@@ -230,7 +230,7 @@ def optimal_estimation(
 #
 # input
 #    mask_in - binary mask of point used as the source of the smoothing
-#    mask_out - binary mask of points to have a result upon exit
+#    mask_out - binary mask of points to have a results upon exit
 #    missing = missing value used as fill for z_out
 #    count_thresh - number of source points to compute an output
 #    n - half-width of smoothing box (x and y)

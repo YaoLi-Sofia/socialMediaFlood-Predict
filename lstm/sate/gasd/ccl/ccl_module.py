@@ -74,7 +74,7 @@ def compute_cloud_cover_layers(
     # --------------------------------------------------------------------
     # compute pixel-level cloud cover for each layer over the box
     # n = ccl box size
-    # m = ccl result spacing
+    # m = ccl results spacing
     # --------------------------------------------------------------------
     # todo m=0
     # for i in prange(0, image_number_of_lines, 2 * m + 1):

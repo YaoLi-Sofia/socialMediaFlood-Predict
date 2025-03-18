@@ -1,8 +1,8 @@
 """
 Author: Joel
-FilePath: nature/lstm/lstm_sinewave/mult_time_predict.py
+FilePath: lstm/lstm_sinewave/multivarite_stock_predict.py
 Date: 2025-03-13 19:01:29
-LastEditTime: 2025-03-14 22:16:57
+LastEditTime: 2025-03-15 22:46:00
 Description: 
 """
 import numpy as np
@@ -23,7 +23,7 @@ data = pd.read_csv('AAPL.csv')  # 从Yahoo Finance下载CSV
 features = data[['Open', 'High', 'Low', 'Close', 'Volume']].iloc[2:].values
 # 为close列单独归一化
 close_scaler = MinMaxScaler(feature_range=(0, 1))
-clase_scaled = close_scaler.fit_transform(features[:, 3].reshape(-1, 1))
+close_scaled = close_scaler.fit_transform(features[:, 3].reshape(-1, 1))
 # 数据归一化
 feature_scaler = MinMaxScaler()
 scaler_features = feature_scaler.fit_transform(features)
@@ -39,7 +39,7 @@ def create_multivariate_dataset(data, target, time_steps=60):
 
 
 time_steps = 60
-X, Y = create_multivariate_dataset(scaler_features, clase_scaled, time_steps)
+X, Y = create_multivariate_dataset(scaler_features, close_scaled, time_steps)
 
 print('X.shape', X.shape)
 print('Y.shape', Y.shape)
@@ -67,6 +67,7 @@ predicted = close_scaler.inverse_transform(predicted)  # 使用Close列的scaler
 Y_test_actual = close_scaler.inverse_transform(Y_test.reshape(-1, 1))
 
 # 8.可视化结果
+plt.figure(figsize=(12, 8))
 plt.plot(Y_test_actual, label='True Price')
 plt.plot(predicted, label='Predicted Price')
 plt.legend()

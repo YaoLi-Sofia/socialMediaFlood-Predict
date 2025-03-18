@@ -55,7 +55,7 @@ bb_rad = c1 * planck_nu ** 3 / (np.exp(planck_a2 * c2 * planck_nu / (t_planck - 
 
 
 # ------------------------------------------------------------------
-# function planck_rad_fast(c, t, db_dt) result(b)
+# function planck_rad_fast(c, t, db_dt) results(b)
 #
 # subroutine to convert brightness temperature to radiance using a
 # look-up table *function that returns a scalar*.
@@ -73,7 +73,7 @@ def planck_rad_fast(c, t):
 
 
 # ------------------------------------------------------------------------
-# function planck_temp_fast(c, b, db_dt) result(t)
+# function planck_temp_fast(c, b, db_dt) results(t)
 #
 # subroutine to convert radiance (b) to brightness temperature(t) using a
 # look-up table *function that returns a scalar*.
